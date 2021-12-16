@@ -2,11 +2,12 @@
     "name": "eve",
     "version": "1.0.0",
     "scripts": {
-        "dev": "vite --host",
+        "dev":  "vite dev",
         "build": "vite build",
-        "prev": "vite preview --host",
-        "demo": "vite build && pnpm prev",
-        "clean": "vite --emptyOutDir"
+        "prev": "vite preview",
+        "prod": "vite build && pnpm prev",
+        "clean": "trash public .pnpm-debug.log",
+        "clean-all": "trash public .pnpm-debug.log node_modules"
     },
     "devDependencies": {
         "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
