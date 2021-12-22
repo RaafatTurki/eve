@@ -1,25 +1,12 @@
-<main>
-	<h1>404</h1>
-</main>
+<script>
+import Page from 'lib/Page'
+import {link} from 'svelte-spa-router'
 
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+// https://github.com/ItalyPaleAle/svelte-spa-router/issues/98
+// export let params = {}
+</script>
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+<Page>
+    <h1>404</h1>
+    <a use:link href="/">Go Back Home</a>
+</Page>

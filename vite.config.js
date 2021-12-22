@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
+import unocss from 'unocss/vite'
+import unocssPresetIcons from '@unocss/preset-icons'
+import unocssPresetUno from '@unocss/preset-uno'
 
 export default defineConfig({
     // env vars
@@ -37,6 +40,22 @@ export default defineConfig({
         svelte({
             preprocess: {
             }
+        }),
+        unocss({
+            presets: [
+                unocssPresetUno(),
+                unocssPresetIcons({
+                    scale: 2,
+                    // prefix: 'i-',
+                    // mode: 'auto',
+                    // warn: false,
+                    extraProperties: {
+                      'display': 'inline-block',
+                      'vertical-align': 'middle',
+                      // 'background-color': 'red',
+                    }
+                })
+            ]
         }),
         beep(),
     ],
