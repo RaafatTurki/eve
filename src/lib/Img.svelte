@@ -1,11 +1,8 @@
 <script>
 import { onMount } from 'svelte'
-// import IntersectionObserver from 'lib/IntersectionObserver'
-// import { fade } from 'svelte/transition';
 
 export let src
 export let alt
-export let c
 
 let is_intersected = false
 let is_loaded = false
@@ -26,45 +23,37 @@ onMount(() => {
         return () => observer.unobserve(container)
     
     } else {
-        console.log("IntersectionObserver not supported!")
+        console.log("IntersectionObserver not supported image can't be lazy loaded!")
+        is_intersected = true
     }
 })
 
 </script>
 
 
-<div class={`container ${c}`} bind:this={container}>
+<div bind:this={container} {...$$props}>
     {#if is_intersected}
         <img {src} {alt} class:is_loaded on:load={() => is_loaded = true}/>
-    {/if}    
+    {/if}
 </div>
 
-<!-- {#if !is_intersected} -->
-<!--     <div class="placeholder" >PLACEHOLDER</div> -->
-<!-- {/if} -->
 
 <style>
-
-.container {
+div {
     height: 200px;
     width: 200px;
     overflow: hidden;
-    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.1);
 }
 
 img {
     height: 100%;
     width: 100%;
-
-    background: rgba(0, 0, 0, 0.1);
-    border: 1px solid grey;
     opacity: 0.5;
-    transition: 500ms ease-out;
+    transition: opacity 500ms ease-out;
 }
 
 img.is_loaded {
-    border: none;
     opacity: 1;
 }
-
 </style>
