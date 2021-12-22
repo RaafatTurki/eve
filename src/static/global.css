@@ -1,3 +1,14 @@
+/* * { */
+/*   margin: 0; */
+/*   padding: 0; */
+/* } */
+
+:root {
+  --bg: #f4f4f4;
+  --fg: #333;
+  --sel: #ff3e00;
+}
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -23,6 +34,13 @@ a:hover {
 
 a:visited {
 	color: rgb(0,80,160);
+}
+
+h1 {
+    color: #ff3e00;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: 100;
 }
 
 label {
