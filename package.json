@@ -10,18 +10,22 @@
         "clean-all": "trash public .pnpm-debug.log node_modules"
     },
     "devDependencies": {
-        "@iconify/json": "^1.1.445",
-        "@sveltejs/vite-plugin-svelte": "^1.0.0-next.30",
-        "@unocss/preset-icons": "^0.17.2",
-        "@unocss/preset-uno": "^0.17.2",
-        "svelte": "^3.44.0",
+        "@iconify/json": "^1.1.459",
+        "@sveltejs/vite-plugin-svelte": "^1.0.0-next.35",
+        "@unocss/preset-attributify": "^0.17.3",
+        "@unocss/preset-icons": "^0.17.3",
+        "@unocss/preset-uno": "^0.17.3",
+        "@unocss/reset": "^0.17.3",
+        "node-sass": "^7.0.1",
+        "svelte": "^3.46.2",
         "svelte-image": "^0.2.9",
+        "svelte-preprocess": "^4.10.2",
         "svelte-spa-router": "^3.2.0",
-        "unocss": "^0.17.2",
-        "vite": "^2.7.2"
+        "unocss": "^0.17.3",
+        "vite": "^2.7.13"
     },
     "dependencies": {
         "global": "^4.4.0",
-        "pnpm": "^6.24.2"
+        "pnpm": "^6.27.1"
     }
 }

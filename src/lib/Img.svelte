@@ -27,9 +27,7 @@ onMount(() => {
         is_intersected = true
     }
 })
-
 </script>
-
 
 <div bind:this={container} {...$$props}>
     {#if is_intersected}

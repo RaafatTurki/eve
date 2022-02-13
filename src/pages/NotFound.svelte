@@ -7,6 +7,9 @@ import {link} from 'svelte-spa-router'
 </script>
 
 <Page>
-    <h1>404</h1>
+    <h1>
+        404
+        <div class="i-carbon-warning-alt"/>
+    </h1>
     <a use:link href="/">Go Back Home</a>
 </Page>

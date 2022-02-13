@@ -5,20 +5,20 @@
 <!-- in:fly={{ y: -50, duration: 250, delay: 300 }} -->
 <!-- out:fly={{ y: -50, duration: 250 }} -->
 <main {...$$props} id="content">
-    <slot/>
+  <slot/>
 </main>
 
 <style>
 main {
-    text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto;
+  max-width: 240px;
 }
 
 @media (min-width: 640px) {
-    main {
-        max-width: none;
-    }
+  main {
+    max-width: none;
+  }
 }
 </style>

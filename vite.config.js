@@ -3,6 +3,7 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 import unocss from 'unocss/vite'
 import unocssPresetIcons from '@unocss/preset-icons'
 import unocssPresetUno from '@unocss/preset-uno'
+import svelte_preprocess from 'svelte-preprocess'
 
 export default defineConfig({
     // env vars
@@ -17,6 +18,7 @@ export default defineConfig({
             src:    '/src',
             lib:    '/src/lib',
             pages:  '/src/pages',
+            plugins:  '/src/plugins',
         },
         // dedupe: [],
         extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json', '.svelte'],
@@ -38,14 +40,15 @@ export default defineConfig({
     // plugins
     plugins: [
         svelte({
-            preprocess: {
-            }
+            preprocess: [
+              svelte_preprocess(),
+            ]
         }),
         unocss({
             presets: [
                 unocssPresetUno(),
                 unocssPresetIcons({
-                    scale: 2,
+                    // scale: 2,
                     // prefix: 'i-',
                     // mode: 'auto',
                     // warn: false,
@@ -54,7 +57,7 @@ export default defineConfig({
                       'vertical-align': 'middle',
                       // 'background-color': 'red',
                     }
-                })
+                }),
             ]
         }),
         beep(),
