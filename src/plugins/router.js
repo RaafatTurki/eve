@@ -3,13 +3,14 @@ import {wrap} from 'svelte-spa-router/wrap'
 
 // defines a single route
 class Route {
-  constructor(path, page, meta = {}) {
+  constructor(path, component, meta = {}) {
     this.path = path
-    this.page = page
+    this.component = component
     this.meta = meta
   }
 }
 
+import Loading from 'pages/Loading'
 
 import Home from 'pages/Home'
 import Blogs from 'pages/Blogs'
@@ -31,11 +32,20 @@ const routes = [
 const routes_spa = {}
 
 routes.forEach(r => {
+  let wrapped_route = {}
+
   if (r.meta.is_lazy) {
-    routes_spa[r.path] = wrap({ asyncComponent: () => import(r.page) })
+    wrapped_route['asyncComponent'] = () => import(r.component)
   } else {
-    routes_spa[r.path] = r.page
+    wrapped_route['component'] = r.component
   }
+
+  if (r.meta.guards) wrapped_route['conditions'] = r.meta.guards
+
+  // TODO: add a loading spinner
+  wrapped_route['loadingComponent'] = Loading
+  
+  routes_spa[r.path] = wrap(wrapped_route)
 })
 
 export {
