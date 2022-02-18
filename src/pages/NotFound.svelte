@@ -3,7 +3,7 @@ import Page from 'lib/Page'
 import {link} from 'svelte-spa-router'
 
 // https://github.com/ItalyPaleAle/svelte-spa-router/issues/98
-// export let params = {}
+export let params
 </script>
 
 <Page>

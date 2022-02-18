@@ -1,15 +1,12 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@iconify/json': ^1.1.459
   '@sveltejs/vite-plugin-svelte': ^1.0.0-next.35
   '@unocss/preset-attributify': ^0.17.3
   '@unocss/preset-icons': ^0.17.3
   '@unocss/preset-uno': ^0.17.3
   '@unocss/reset': ^0.17.3
-  global: ^4.4.0
   node-sass: ^7.0.1
-  pnpm: ^6.27.1
   svelte: ^3.46.2
   svelte-image: ^0.2.9
   svelte-preprocess: ^4.10.2
@@ -17,12 +14,7 @@ specifiers:
   unocss: ^0.17.3
   vite: ^2.7.13
 
-dependencies:
-  global: 4.4.0
-  pnpm: 6.27.1
-
 devDependencies:
-  '@iconify/json': 1.1.459
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.35_svelte@3.46.2+vite@2.7.13
   '@unocss/preset-attributify': 0.17.3
   '@unocss/preset-icons': 0.17.3
@@ -81,10 +73,6 @@ packages:
 
   /@gar/promisify/1.1.2:
     resolution: {integrity: sha512-82cpyJyKRoQoRi+14ibCeGPu0CwypgtBAdBhq1WfvagpCZNKqwXbKwXllYSMG91DhmG4jt9gN8eP6lGOtozuaw==}
-    dev: true
-
-  /@iconify/json/1.1.459:
-    resolution: {integrity: sha512-ToupL/TZCWIx2OeISEnZUqGIsYzOcc9exHbzQV3rhGARxoao+fl5a6C/YG2St/tocOCcHExwuGnV0fO9wpdJMA==}
     dev: true
 
   /@iconify/types/1.0.12:
@@ -1208,10 +1196,9 @@ packages:
     engines: {node: '>=8'}
     dev: true
 
-  /detect-libc/1.0.3:
-    resolution: {integrity: sha1-+hN8S9aY7fVc1c0CrFWfkaTEups=}
-    engines: {node: '>=0.10'}
-    hasBin: true
+  /detect-libc/2.0.1:
+    resolution: {integrity: sha512-463v3ZeIrcWtdgIg6vI6XUncguvr2TnGl4SzDXinkt9mSLpBJKXT3mW6xT3VQdDN11+WVs29pgvivTc4Lp8v+w==}
+    engines: {node: '>=8'}
     dev: true
 
   /dom-serializer/0.2.2:
@@ -1223,6 +1210,7 @@ packages:
 
   /dom-walk/0.1.2:
     resolution: {integrity: sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==}
+    dev: true
 
   /domelementtype/1.3.1:
     resolution: {integrity: sha512-BSKB+TSpMpFI/HOxCNr1O8aMOTZ8hT3pM3GQ0w/mWRmkhEDSFJkkyzz4XQsBV44BChwGkrDfMyjVD0eA2aFV3w==}
@@ -1771,6 +1759,7 @@ packages:
     dependencies:
       min-document: 2.19.0
       process: 0.11.10
+    dev: true
 
   /globule/1.3.3:
     resolution: {integrity: sha512-mb1aYtDbIjTu4ShMB85m3UzjX9BVKe9WCzsnfMSZk+K5GpIbBOexgg4PPCt5eHDEG5/ZQAUX2Kct02zfiPLsKg==}
@@ -2358,6 +2347,7 @@ packages:
     resolution: {integrity: sha1-e9KC4/WELtKVu3SM3Z8f+iyCRoU=}
     dependencies:
       dom-walk: 0.1.2
+    dev: true
 
   /min-indent/1.0.1:
     resolution: {integrity: sha512-I9jwMn07Sy/IwOj3zVkVik2JTvgpaykDZEigL6Rx6N9LbMywwUSMtxET+7lVoDLLd3O3IXwJwvuuns8UB/HeAg==}
@@ -2807,12 +2797,6 @@ packages:
     engines: {node: '>=4.0.0'}
     dev: true
 
-  /pnpm/6.27.1:
-    resolution: {integrity: sha512-aW+oDXiMk9mzInmIaRv9v9+FSNkXBs60rVUO6QBpalPja0eO3J5ePSyBxAbLsuhGGbEOpwRq0aNywFq8yIi9HQ==}
-    engines: {node: '>=12.17'}
-    hasBin: true
-    dev: false
-
   /postcss/8.4.5:
     resolution: {integrity: sha512-jBDboWM8qpaqwkMwItqTQTiFikhs/67OYVvblFFTM7MrZjt6yMKd6r2kgXizEbTTljacm4NldIlZnhbjr84QYg==}
     engines: {node: ^10 || ^12 || >=14}
@@ -2828,12 +2812,12 @@ packages:
       jimp: 0.14.0
     dev: true
 
-  /prebuild-install/7.0.0:
-    resolution: {integrity: sha512-IvSenf33K7JcgddNz2D5w521EgO+4aMMjFt73Uk9FRzQ7P+QZPKrp7qPsDydsSwjGt3T5xRNnM1bj1zMTD5fTA==}
+  /prebuild-install/7.0.1:
+    resolution: {integrity: sha512-QBSab31WqkyxpnMWQxubYAHR5S9B2+r81ucocew34Fkl98FhvKIF50jIJnNOBmAZfyNV7vE5T6gd3hTVWgY6tg==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      detect-libc: 1.0.3
+      detect-libc: 2.0.1
       expand-template: 2.0.3
       github-from-package: 0.0.0
       minimist: 1.2.5
@@ -2843,7 +2827,7 @@ packages:
       npmlog: 4.1.2
       pump: 3.0.0
       rc: 1.2.8
-      simple-get: 4.0.0
+      simple-get: 4.0.1
       tar-fs: 2.1.1
       tunnel-agent: 0.6.0
     dev: true
@@ -2855,6 +2839,7 @@ packages:
   /process/0.11.10:
     resolution: {integrity: sha1-czIwDoQBYb2j5podHZGn1LwW8YI=}
     engines: {node: '>= 0.6.0'}
+    dev: true
 
   /promise-inflight/1.0.1:
     resolution: {integrity: sha1-mEcocL8igTL8vdhoEputEsPAKeM=}
@@ -3116,17 +3101,17 @@ packages:
     resolution: {integrity: sha1-BF+XgtARrppoA93TgrJDkrPYkPc=}
     dev: true
 
-  /sharp/0.29.3:
-    resolution: {integrity: sha512-fKWUuOw77E4nhpyzCCJR1ayrttHoFHBT2U/kR/qEMRhvPEcluG4BKj324+SCO1e84+knXHwhJ1HHJGnUt4ElGA==}
+  /sharp/0.30.1:
+    resolution: {integrity: sha512-ycpz81q8AeVjz1pGvvirQBeJcYE2sXAjcLXR/69LWOe/oxavBLOrenZcTzvTXn83jqAGqY+OuwF+2kFXzbKtDA==}
     engines: {node: '>=12.13.0'}
     requiresBuild: true
     dependencies:
       color: 4.2.0
-      detect-libc: 1.0.3
+      detect-libc: 2.0.1
       node-addon-api: 4.3.0
-      prebuild-install: 7.0.0
+      prebuild-install: 7.0.1
       semver: 7.3.5
-      simple-get: 4.0.0
+      simple-get: 4.0.1
       tar-fs: 2.1.1
       tunnel-agent: 0.6.0
     dev: true
@@ -3159,8 +3144,8 @@ packages:
     resolution: {integrity: sha512-cSFtAPtRhljv69IK0hTVZQ+OfE9nePi/rtJmw5UjHeVyVroEqJXP1sFztKUy1qU+xvz3u/sfYJLa947b7nAN2Q==}
     dev: true
 
-  /simple-get/4.0.0:
-    resolution: {integrity: sha512-ZalZGexYr3TA0SwySsr5HlgOOinS4Jsa8YB2GJ6lUNAazyAu4KG/VmzMTwAt2YVXzzVj8QmefmAonZIK2BSGcQ==}
+  /simple-get/4.0.1:
+    resolution: {integrity: sha512-brv7p5WgH0jmQJr1ZDDfKDOSeWWg+OVypG99A/5vYGPqJ6pxiaHLy8nxtFjBA7oMa01ebA9gfh1uMCFqOuXxvA==}
     dependencies:
       decompress-response: 6.0.0
       once: 1.4.0
@@ -3402,8 +3387,8 @@ packages:
       axios: 0.19.2
       blurhash: 1.1.4
       potrace: 2.1.8
-      sharp: 0.29.3
-      svelte: 3.46.2
+      sharp: 0.30.1
+      svelte: 3.46.4
       svelte-waypoint: 0.1.4
       svgo: 1.3.2
     dev: true
@@ -3471,6 +3456,11 @@ packages:
 
   /svelte/3.46.2:
     resolution: {integrity: sha512-RXSAtYNefe01Sb1lXtZ2I+gzn3t/h/59hoaRNeRrm8IkMIu6BSiAkbpi41xb+C44x54YKnbk9+dtfs3pM4hECA==}
+    engines: {node: '>= 8'}
+    dev: true
+
+  /svelte/3.46.4:
+    resolution: {integrity: sha512-qKJzw6DpA33CIa+C/rGp4AUdSfii0DOTCzj/2YpSKKayw5WGSS624Et9L1nU1k2OVRS9vaENQXp2CVZNU+xvIg==}
     engines: {node: '>= 8'}
     dev: true
 
