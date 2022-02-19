@@ -14,12 +14,11 @@
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.37",
     "@unocss/preset-icons": "^0.17.3",
     "@unocss/reset": "^0.17.3",
+    "@unocss/vite": "^0.25.0",
     "sass": "^1.49.8",
     "svelte": "^3.46.4",
-    "svelte-image": "^0.2.9",
     "svelte-preprocess": "^4.10.3",
     "svelte-spa-router": "^3.2.0",
-    "unocss": "^0.17.3",
     "vite": "^2.8.4"
   }
 }
