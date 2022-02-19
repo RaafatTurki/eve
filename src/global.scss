@@ -1,0 +1,102 @@
+/* Define added fontfaces */
+@font-face {
+  font-family: "Android";
+  src: url("/fonts/android_sans.ttf") format("truetype");
+}
+
+:root {
+  --bg: #ececec;
+  --mg: #9B9EA3;
+  --fg: #333;
+
+  --bl: black;
+  --wh: white;
+  --acc: #94a434;
+  --link: #0064c8;
+
+}
+
+/* Default Svelte CSS */
+input, button, select, textarea {
+  -webkit-padding: 0.4em 0;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+}
+
+input:disabled { color: #ccc; }
+
+button {
+  color: #333;
+  background-color: #f4f4f4;
+  outline: none;
+}
+button:disabled { color: #999; }
+button:not(:disabled):active { background-color: #ddd; }
+button:focus { border-color: #666; }
+
+a {
+	color: var(--link);
+	text-decoration: none;
+}
+a:hover { text-decoration: underline; }
+a:visited { color: var(--link); }
+
+
+.spacer {
+  flex-grow: 1;
+}
+
+body {
+  font-family: Android, sans-serif;
+  background: var(--bg);
+  color: var(--bl);
+}
+
+
+
+/* CSS Reset */
+
+/* Use a more-intuitive box-sizing model. */
+/* *, *::before, *::after { */
+/*   box-sizing: border-box; */
+/* } */
+
+/* Remove default margin */
+/* * { */
+/*   margin: 0; */
+/* } */
+
+/* Allow percentage-based heights in the application */
+/* html, body { */
+/*   height: 100%; */
+/* } */
+
+/* Add accessible line-height */
+/* Improve text rendering */
+/* body { */
+/*   line-height: 1.5; */
+/*   -webkit-font-smoothing: antialiased; */
+/* } */
+
+/* Improve media defaults */
+/* img, picture, video, canvas, svg { */
+/*   display: block; */
+/*   max-width: 100%; */
+/* } */
+
+/* Remove built-in form typography styles */
+/* input, button, textarea, select { */
+/*   font: inherit; */
+/* } */
+
+/* Avoid text overflows */
+/* p, h1, h2, h3, h4, h5, h6 { */
+/*   overflow-wrap: break-word; */
+/* } */
+
+
+/* label { */
+/* 	display: block; */
+/* } */

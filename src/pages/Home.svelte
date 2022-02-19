@@ -3,12 +3,18 @@ import Page from 'lib/Page'
 </script>
 
 <Page>
-  <h1>Da Eve Svelte Template</h1>
+  <h1 class="bg-red-100 hi">Da Eve Svelte Template</h1>
 
   {#each Array(5) as i}
-    <div class="i-logos-svelte-icon"></div>
+    <div class="i-logos:svelte-icon"></div>
   {/each}
 </Page>
 
-<style>
+<style lang='scss'>
+.hi {
+  color: red;
+  &:hover {
+    color: orange;
+  }
+}
 </style>

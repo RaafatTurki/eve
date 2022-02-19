@@ -20,7 +20,7 @@ let blog = $blogs[params.id]
 
           <div class='line-spacer'/>
           <div class='content'>
-            <img class='image' src={blog.src}/>
+            <img class='image' src={blog.image} alt={blog.title}/>
             {blog.text}
           </div>
         </div>

@@ -5,7 +5,7 @@ import { link } from 'svelte-spa-router'
 </script>
 
 <div class="navbar">
-  <img class='logo' src='/img/potato.png'/>
+  <img class='logo' src='/img/potato.png' alt='potato'/>
 
   <div class='nav-links'>
     {#each routes as route}
@@ -31,28 +31,6 @@ import { link } from 'svelte-spa-router'
 <Router routes={routes_spa}/>
 
 <style lang='scss'>
-:global(:root) {
-  --bg: #ececec;
-  --mg: #9B9EA3;
-  --fg: #333;
-
-  --bl: black;
-  --wh: white;
-  --acc: #94a434;
-  --link: #0064c8;
-
-}
-
-:global(.spacer) {
-  flex-grow: 1;
-}
-
-:global(body) {
-  font-family: Android, sans-serif;
-  background: var(--bg);
-  color: var(--bl);
-}
-
 .navbar {
   display: flex;
   background: var(--wh);

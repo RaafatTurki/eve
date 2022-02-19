@@ -7,20 +7,19 @@
     "prev": "vite preview",
     "prod": "vite build && pnpm prev",
     "clean": "trash public .pnpm-debug.log",
-    "clean-all": "trash public .pnpm-debug.log node_modules"
+    "clean:all": "trash public .pnpm-debug.log node_modules"
   },
   "devDependencies": {
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.35",
-    "@unocss/preset-attributify": "^0.17.3",
+    "@iconify/json": "^2.1.3",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.37",
     "@unocss/preset-icons": "^0.17.3",
-    "@unocss/preset-uno": "^0.17.3",
     "@unocss/reset": "^0.17.3",
-    "node-sass": "^7.0.1",
-    "svelte": "^3.46.2",
+    "sass": "^1.49.8",
+    "svelte": "^3.46.4",
     "svelte-image": "^0.2.9",
-    "svelte-preprocess": "^4.10.2",
+    "svelte-preprocess": "^4.10.3",
     "svelte-spa-router": "^3.2.0",
     "unocss": "^0.17.3",
-    "vite": "^2.7.13"
+    "vite": "^2.8.4"
   }
 }

@@ -6,6 +6,3 @@ import WaveBands from 'lib/WaveBands'
 <Page>
   <WaveBands/>
 </Page>
-
-<style>
-</style>

@@ -18,7 +18,7 @@ import { blogs } from 'plugins/store'
           </a>
 
         </div>
-        <img src={blog.src} alt={blog.name}/>
+        <img src={blog.image} alt={blog.title}/>
       </div>
     {/each}
 
