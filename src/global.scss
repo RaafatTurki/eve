@@ -19,10 +19,10 @@
 /* Default Svelte CSS */
 input, button, select, textarea {
   -webkit-padding: 0.4em 0;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 2px;
 }
 
 input:disabled { color: #ccc; }
@@ -37,8 +37,8 @@ button:not(:disabled):active { background-color: #ddd; }
 button:focus { border-color: #666; }
 
 a {
-	color: var(--link);
-	text-decoration: none;
+  color: var(--link);
+  text-decoration: none;
 }
 a:hover { text-decoration: underline; }
 a:visited { color: var(--link); }

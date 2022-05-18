@@ -11,21 +11,21 @@ let blog = $blogs[params.id]
 </script>
 
 <Page>
-    <div>
-        <div class='blog'>
-          <div class='header'>
-            <span class='title'>{blog.title}</span>
-            <span class='date'>{blog.date}</span>
-          </div>
+  <div>
+    <div class='blog'>
+      <div class='header'>
+        <span class='title'>{blog.title}</span>
+        <span class='date'>{blog.date}</span>
+      </div>
 
-          <div class='line-spacer'/>
-          <div class='content'>
-            <img class='image' src={blog.image} alt={blog.title}/>
-            {blog.text}
-          </div>
-        </div>
-       <!-- <h3>Page was not found</h3> -->
+      <div class='line-spacer'/>
+      <div class='content'>
+        <img class='image' src={blog.image} alt={blog.title}/>
+        {blog.text}
+      </div>
     </div>
+    <!-- <h3>Page was not found</h3> -->
+  </div>
 </Page>
 
 <style>

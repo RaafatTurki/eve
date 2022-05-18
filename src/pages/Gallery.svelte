@@ -12,7 +12,7 @@ import { gallery } from 'plugins/store'
     {#each $gallery as media}
       {#if media.type == 'image'}
         <Img class='gallary-image' src={media.src} alt=''/>
-        {/if}
+      {/if}
     {/each}
   <main/>
 </Page>

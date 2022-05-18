@@ -40,7 +40,7 @@ routes.forEach(r => {
   if (r.meta.guards) wrapped_route['conditions'] = r.meta.guards
 
   wrapped_route['loadingComponent'] = Loading
-  
+
   routes_spa[r.path] = wrap(wrapped_route)
 })
 

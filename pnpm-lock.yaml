@@ -1,7 +1,7 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@iconify/json': ^2.1.3
+  '@iconify/json': ^2.1.7
   '@sveltejs/vite-plugin-svelte': ^1.0.0-next.37
   '@unocss/preset-icons': ^0.17.3
   '@unocss/reset': ^0.17.3
@@ -13,7 +13,7 @@ specifiers:
   vite: ^2.8.4
 
 devDependencies:
-  '@iconify/json': 2.1.3
+  '@iconify/json': 2.1.7
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.37_svelte@3.46.4+vite@2.8.4
   '@unocss/preset-icons': 0.17.3
   '@unocss/reset': 0.17.3
@@ -43,8 +43,8 @@ packages:
     resolution: {integrity: sha512-MrAQ/MrPSxbh1bBrmwJjORfJymw4IqSHFBXqvxaga3ZdDM+/zokYF8DjyJpSjY2QmpmgQrajDUBJOWrYeARfzA==}
     dev: true
 
-  /@iconify/json/2.1.3:
-    resolution: {integrity: sha512-5rYrDhffFpygm9TKrPdn7nT3PyZj4ePUGsBCNosQ/8wLbyHbHrzmaStPYrwTMO4xPN3o6vkzdLa24nLiNM6q1w==}
+  /@iconify/json/2.1.7:
+    resolution: {integrity: sha512-vC6mIZVMQY2X2sBSW4CNSH+pdi9mwLNZj+VwDXI9tqD2fkWXdXI9OCiCR0D4yqx3Vdg0ttcizXqAmhWQoHD1Sw==}
     dependencies:
       '@iconify/types': 1.0.12
       pathe: 0.0.2

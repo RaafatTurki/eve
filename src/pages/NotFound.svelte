@@ -7,9 +7,9 @@ export let params
 </script>
 
 <Page>
-    <h1>
-        404
-        <div class="i-carbon-warning-alt"/>
-    </h1>
-    <a use:link href="/">Go Back Home</a>
+  <h1>
+    404
+    <div class="i-carbon-warning-alt"/>
+  </h1>
+  <a use:link href="/">Go Back Home</a>
 </Page>
