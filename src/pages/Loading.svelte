@@ -1,4 +1,4 @@
-<script>
+<script lang ='ts'>
 import Page from 'lib/Page'
 import WaveBands from 'lib/WaveBands'
 </script>

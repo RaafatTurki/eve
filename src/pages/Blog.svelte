@@ -1,10 +1,10 @@
-<script>
+<script lang='ts'>
 // import Img from 'lib/Img'
 import Page from 'lib/Page'
 // import {link} from 'svelte-spa-router'
 import { blogs } from 'plugins/store'
 
-export let params = {}
+export let params: any = {}
 
 let blog = $blogs[params.id]
 

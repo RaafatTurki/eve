@@ -1,4 +1,4 @@
-<script>
+<script lang ='ts'>
 import Img from 'lib/Img'
 import Page from 'lib/Page'
 // import {link} from 'svelte-spa-router'

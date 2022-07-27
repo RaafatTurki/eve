@@ -1,4 +1,4 @@
-<script >
+<script lang='ts'>
 export let height = '100px'
 export let band_width = '2px'
 export let band_gap = '10px'
@@ -8,12 +8,12 @@ export let duration = "1s"
 export let sequence = [1, 2, 3, 4, 5, 5, 6, 7, 8, 9]
 
 let duration_unit = duration.match(/[a-zA-Z]/)[0]
-let duration_num = duration.replace(/[a-zA-Z]/, "")
+let duration_num = Number(duration.replace(/[a-zA-Z]/, ""))
 </script>
 
 <div id='container' style='--height: {height}; --band_width: {band_width}; --band_gap: {band_gap}; --color: {color}; --duration: {duration}'>
   {#each sequence as value}
-    <div id='band' style='animation-delay: {value * duration_num/12}{duration_unit}' />
+    <div id='band' style='animation-delay: {value * duration_num / 12}{duration_unit}' />
   {/each}
 </div>
 

@@ -1,12 +1,13 @@
-<script>
+<script lang='ts'>
 import { onMount } from 'svelte'
 
-export let src
-export let alt
+export let src: string
+export let alt: string
 
 let is_intersected = false
 let is_loaded = false
-let container
+// TODO: do proper typing
+let container: any
 
 onMount(() => {
   if (typeof IntersectionObserver !== 'undefined') {

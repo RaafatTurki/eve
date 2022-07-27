@@ -1,10 +1,12 @@
-<script>
+<script lang='ts'>
 import Router from 'svelte-spa-router'
 import { routes_spa, routes } from 'plugins/router'
 import { link } from 'svelte-spa-router'
 </script>
 
 <div class="navbar">
+
+
   <img class='logo' src='/img/potato.png' alt='potato'/>
 
   <div class='nav-links'>
